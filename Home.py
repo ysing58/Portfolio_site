@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/photo.jpg", width=500)
+    st.image("images/photo.jpg", width=450)
 
 with col2:
     st.title("Yadvendra singh")
@@ -21,7 +21,7 @@ content1 = """Below you can find some of the apps i have built in python. Feel f
 
 st.write(content1)
 
-col3, col4 = st.columns(2)
+col3, blank_column,  col4 = st.columns([1.5, .1, 1.5])
 
 df = pandas.read_csv("data.csv", sep=";")
 
